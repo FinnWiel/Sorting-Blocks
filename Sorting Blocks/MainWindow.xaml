@@ -1,0 +1,22 @@
+﻿<Window x:Class="Sorting_Blocks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sorting_Blocks"
+        mc:Ignorable="d"
+        Title="Sort Blocks" Height="450" Width="800" MaxHeight="450" MaxWidth="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10">
+            <TextBox Name="tbxBlockAmount" Width="100" Margin="10"></TextBox>
+            <Button Name="btnGetBlocks" Content="Get blocks" Margin="10"  Width="100" Click="btnGetBlocks_Click"/>
+            <Button Name="btnSort" Content="Sort" Margin="10" Width="50" Click="btnSort_Click"></Button>
+        </StackPanel>
+        <Border VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="black" BorderThickness="2">
+            <WrapPanel Name="blockContainer" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="600">
+                <!--  Blocks go here -->
+            </WrapPanel>
+        </Border>
+
+    </Grid>
+</Window>
